@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <title>Экзамен</title>
+    </head>
+    <body>
+       
+       
+       
+       <div class="container">
+         <h1 class="regwelcome">Welcome to my site!<br>
+         Let’s begin the adventure</h1>
+          <form class="registration">
+          <label for="">Enter your email*</label><br>
+           <span>→</span><input type="text" name="email" class="email Registr"><br>
+           <label>Enter your login*</label><br>
+            <span>→</span><input type="text" name="login" class="login Registr"><br>
+            <label>Enter your password*</label><br>
+            <span>→</span><input type="password" name="password" class="password Registr"><br>
+            <label>Repeat password*</label><br>
+            <span>→</span><input type="password" name="password2" class="password2 Registr"><br>
+            <input type="submit" name="check" class="check" value="Continue">
+           </form>
+       </div> 
+       
+       <div class="calc">
+       <p class="rub">1 Russian RUB is equal to 0,011$</p>
+	<input id="num1" class="in" />
+	<div id="operator_btns">
+	  <button id="plusClc" onclick="op='+'" class="Clc">+</button>
+	  <button id="minusClc" onclick="op='-'" class="Clc">-</button>
+	  <button id="timesClc" onclick="op='*'" class="Clc">x</button>
+	  <button id="divideClc" onclick="op='/'" class="Clc">:</button>
+	</div>
+	<input id="num2" class="in"/>
+	<br>
+	<button onclick="func()" class="count">Сount</button>
+	<p id="result"></p>
+       </div>
+       
+       <div class="bmi">
+           <h1 class="bmicalc">BMI Calculator</h1>
+
+        <div id="calculator">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter your weight" class="bmiother" required>
+            <br>
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" placeholder="Enter your height" class="bmiother" required>
+            <br>
+            <button onclick="calculateBMI()" class="bmires">Calculate</button>
+            <div id="results"></div>
+            </div>
+        </div>
+       
+        
+        
+        
+        
+        <script src="script.js"></script>
+    </body>
+</html>
